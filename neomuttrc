@@ -9,24 +9,23 @@ set envelope_from = yes
 ####        IMAP SETTINGS
 set imap_user = "rosxhead@gmail.com"
 set imap_pass = "sldueevykcyshzps"
-
-#set trash = "Trash"
-####        STMP SETTINGS
-set smtp_url = "smtps://rosxhead@gmail.com@smtp.gmail.com:465"
-#   GMAIL crear contraseña de aplicaciones y activar autentificacion de 2 pasos
-set smtp_pass = "sldueevykcyshzps"
-set smtp_authenticators = 'gssapi:login'
-
 # Indica la carperta donde va extraer la información del correo
 # Correo @ Servidor IMAP : PUERTO
 set folder = "imaps://rosxhead@gmail.com@imap.gmail.com:993"
+
+####        STMP SETTINGS
+set smtp_url = "smtps://rosxhead@gmail.com@smtp.gmail.com:587"
+#   GMAIL crear contraseña de aplicaciones y activar autentificacion de 2 pasos
+set smtp_pass = "sldueevykcyshzps"
+set smtp_authenticators = 'gssapi:login'
+#       INBOX
 set spoolfile = "+INBOX"
-mailboxes = "+INBOX"
-set postponed = "+Drafts"
-set record = "+Sent Mail"
-set trash = "+Trash"
-#mailboxes =INBOX =Important =Starred =Drafts ="Sent Mail" =Spam =Trash
-mailboxes =INBOX ="Sent Mail" =Spam =Trash =Drafts
+#mailboxes = "+INBOX"
+set record = "+[Gmail]/Enviados"#set record = "+Sent Mail"
+set trash = "+[Gmail]/Papelera"#set trash = "+Trash"
+set postponed = "+[Gmail]/Borradores"#set postponed = "+Drafts"
+#mailboxes =INBOX =Important =Starred =Drafts =Trash =Sent
+mailboxes =INBOX =[Gmail]/Enviados =[Gmail]/Borradores =[Gmail]/Papelera
 # Ensure TLS is enforced
 # activate TLS if available on the server
 set ssl_starttls = yes
@@ -50,6 +49,7 @@ set text_flowed = yes
 set sort = reverse-date-received
 
 #sidebar
+set sidebar_divider_char = ' | '
 set sidebar_visible # comment to disable sidebar by default
 set sidebar_short_path
 set sidebar_folder_indent
