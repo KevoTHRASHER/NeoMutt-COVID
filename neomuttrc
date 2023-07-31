@@ -12,21 +12,21 @@ set imap_pass = "sldueevykcyshzps"
 
 #set trash = "Trash"
 ####        STMP SETTINGS
-set smtp_url = "smtps://rosxhead@gmail.com@smtp.gmail.com:465/"
+set smtp_url = "smtps://rosxhead@gmail.com@smtp.gmail.com:465"
 #   GMAIL crear contraseña de aplicaciones y activar autentificacion de 2 pasos
 set smtp_pass = "sldueevykcyshzps"
 set smtp_authenticators = 'gssapi:login'
 
 # Indica la carperta donde va extraer la información del correo
 # Correo @ Servidor IMAP : PUERTO
-set folder = "imaps://imap.gmail.com:993"
+set folder = "imaps://rosxhead@gmail.com@imap.gmail.com:993"
 set spoolfile = "+INBOX"
-set postponed =  "+Drafts"
 mailboxes = "+INBOX"
+set postponed = "+Drafts"
 set record = "+Sent Mail"
 set trash = "+Trash"
-mailboxes =Important =Starred =Drafts ="Sent Mail" =Spam =Trash
-
+#mailboxes =INBOX =Important =Starred =Drafts ="Sent Mail" =Spam =Trash
+mailboxes =INBOX ="Sent Mail" =Spam =Trash =Drafts
 # Ensure TLS is enforced
 # activate TLS if available on the server
 set ssl_starttls = yes
@@ -34,18 +34,20 @@ set ssl_starttls = yes
 set ssl_force_tls = yes
 
 #Allow Mutt to open a new IMAP connection automatically.
-#unset imap_passive
+unset imap_passive
 
 # Keep the IMAP connection alive by polling intermittently (time in seconds).
-#set imap_keepalive = 300
+set imap_keepalive = 300
 
 # How often to check for new mail (time in seconds).
-#set mail_check = 120
+set mail_check = 120
 
 set charset = "utf-8"
 set editor = "nvim"
 # correct indentation for plain text
-set text_flowed=yes
+set text_flowed = yes
+# Cambio de orden de visualizacion del correo mas nuevo al mas viejo
+set sort = reverse-date-received
 
 #sidebar
 set sidebar_visible # comment to disable sidebar by default
@@ -57,8 +59,6 @@ bind index,pager \CJ sidebar-prev
 bind index,pager \CK sidebar-next
 bind index,pager \CE sidebar-open
 bind index,pager B sidebar-toggle-visible
-
-
 
 
 # Default index colors:
