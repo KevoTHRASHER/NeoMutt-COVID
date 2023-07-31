@@ -21,11 +21,11 @@ set smtp_authenticators = 'gssapi:login'
 #       INBOX
 set spoolfile = "+INBOX"
 #mailboxes = "+INBOX"
-set record = "+[Gmail]/Enviados"#set record = "+Sent Mail"
+set record = "+[Gmail]/Enviados"#set record = "+Sent"
 set trash = "+[Gmail]/Papelera"#set trash = "+Trash"
 set postponed = "+[Gmail]/Borradores"#set postponed = "+Drafts"
 #mailboxes =INBOX =Important =Starred =Drafts =Trash =Sent
-mailboxes =INBOX =[Gmail]/Enviados =[Gmail]/Borradores =[Gmail]/Papelera
+mailboxes =INBOX =[Gmail]/Enviados =[Gmail]/Borradores =[Gmail]/Destacados =[Gmail]/Importantes =[Gmail]/Spam =[Gmail]/Papelera =[Gmail]/Todos
 # Ensure TLS is enforced
 # activate TLS if available on the server
 set ssl_starttls = yes
