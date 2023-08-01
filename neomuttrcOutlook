@@ -1,5 +1,3 @@
-set sidebar_visible
-set mail_check_stats
 ####        USER SETTINGS
 set realname = "Linux Unix"
 set from = "pruebaskevo87@outlook.com"
@@ -12,12 +10,13 @@ set imap_pass = "pruebas1987."
 # Indica la carperta donde va extraer la información del correo
 # Correo @ Servidor IMAP : PUERTO
 set folder = "imaps://pruebaskevo87@outlook.com@outlook.office365.com:993"
+
 ####        STMP SETTINGS
 set smtp_url = "smtp://pruebaskevo87@outlook.com@smtp.office365.com:587"
-#   GMAIL crear contraseña de aplicaciones y activar autentificacion de 2 pasos
 set smtp_pass = "pruebas1987."
 set smtp_authenticators = 'login'
-#       INBOX
+
+####    INBOX & MAILBOXES
 set spoolfile = "+INBOX"
 #mailboxes = "+INBOX"
 set record = "+INBOX"#set record = "+Sent"
@@ -25,18 +24,17 @@ set trash = "+Trash"#set trash = "+Trash"
 set postponed = "+Drafts"#set postponed = "+Drafts"
 #mailboxes #=INBOX =Important =Starred =Drafts =Trash =Sent
 mailboxes =INBOX =Drafts =Archive =Deleted =Junk =Notes =Outbox =Sent
+
+####    SSL SETTINGS
 # Ensure TLS is enforced
 # activate TLS if available on the server
 set ssl_starttls = yes
 # always use SSL when connecting to a server
 set ssl_force_tls = yes
-
 #Allow Mutt to open a new IMAP connection automatically.
 unset imap_passive
-
 # Keep the IMAP connection alive by polling intermittently (time in seconds).
 set imap_keepalive = 300
-
 # How often to check for new mail (time in seconds).
 set mail_check = 120
 
