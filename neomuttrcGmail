@@ -14,7 +14,7 @@ set imap_pass = "sldueevykcyshzps"
 set folder = "imaps://rosxhead@gmail.com@imap.gmail.com:993"
 
 ####        STMP SETTINGS
-set smtp_url = "smtps://rosxhead@gmail.com@smtp.gmail.com:587"
+set smtp_url = "smtp://rosxhead@gmail.com@smtp.gmail.com:587"
 #   GMAIL crear contraseña de aplicaciones y activar autentificacion de 2 pasos
 set smtp_pass = "sldueevykcyshzps"
 set smtp_authenticators = 'gssapi:login'
