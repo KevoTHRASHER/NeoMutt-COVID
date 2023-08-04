@@ -1,0 +1,36 @@
+####        USER SETTINGS SEND OPTIONS
+set realname = "Linux Unix"
+set from = "pruebaskevo87@outlook.com"
+
+####        IMAP SETTINGS RECEIVE OPTIONS
+set imap_user = "pruebaskevo87@outlook.com""
+set imap_pass = "pruebas1987."
+# Indica la carperta donde va extraer la información del correo
+# Correo @ Servidor IMAP : PUERTO
+set folder = "imaps://pruebaskevo87@outlook.com@outlook.office365.com:993"
+
+####        STMP SETTINGS SEND OPTIONS
+set smtp_url = "smtp://pruebaskevo87@outlook.com@smtp.office365.com:587"
+set smtp_pass = "pruebas1987."
+set smtp_authenticators = 'login'
+
+####        INBOX & MAILBOXES
+set spoolfile = "+INBOX"
+#mailboxes = "+INBOX"
+set record = "+INBOX"#set record = "+Sent"
+set trash = "+Trash"#set trash = "+Trash"
+set postponed = "+Drafts"#set postponed = "+Drafts"
+#mailboxes #=INBOX =Important =Starred =Drafts =Trash =Sent
+#mailboxes =INBOX =Drafts =Archive =Deleted =Junk =Notes =Outbox =Sent
+#set imap_check_subscribed#Alternatively, check for all subscribed IMAP folders (as if all were added with a mailboxes line):
+
+####        SSL SETTINGS
+# Ensure TLS is enforced
+# activate TLS if available on the server
+set ssl_starttls = yes
+# always use SSL when connecting to a server
+set ssl_force_tls = yes
+
+####        Hook -- IMPORTANT!
+#   account-hook $folder "set imap_user=$imap_user imap_pass=$imap_pass"
+account-hook $folder "set imap_user=pruebaskevo87@outlook.com imap_pass=pruebas1987."

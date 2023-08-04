@@ -1,0 +1,37 @@
+####        USER SETTINGS
+set realname = "Kevo THRASHER GMAIL"
+set from = "rosxhead@gmail.com"
+
+####        IMAP SETTINGS RECIEVE OPTIONS
+set imap_user = "rosxhead@gmail.com"
+set imap_pass = "sldueevykcyshzps"
+# Indica la carperta donde va extraer la información del correo
+# Correo @ Servidor IMAP : PUERTO
+set folder = "imaps://rosxhead@gmail.com@imap.gmail.com:993"
+
+####        STMP SETTINGS
+set smtp_url = "smtp://rosxhead@gmail.com@smtp.gmail.com:587"
+#   GMAIL crear contraseña de aplicaciones y activar autentificacion de 2 pasos
+set smtp_pass = "sldueevykcyshzps"
+set smtp_authenticators = 'gssapi:login'
+
+####        INBOX & MAILBOXES
+set spoolfile = "+INBOX"
+#mailboxes = "+INBOX"
+set record = "+[Gmail]/Enviados"#set record = "+Sent"
+set trash = "+[Gmail]/Papelera"#set trash = "+Trash"
+set postponed = "+[Gmail]/Borradores"#set postponed = "+Drafts"
+#mailboxes =INBOX =Important =Starred =Drafts =Trash =Sent
+#mailboxes =INBOX =[Gmail]/Enviados =[Gmail]/Borradores =[Gmail]/Destacados =[Gmail]/Importantes =[Gmail]/Spam =[Gmail]/Papelera =[Gmail]/Todos
+#set imap_check_subscribed#Alternatively, check for all subscribed IMAP folders (as if all were added with a mailboxes line):
+
+####    SSL SETTINGS
+# Ensure TLS is enforced
+# activate TLS if available on the server
+set ssl_starttls = yes
+# always use SSL when connecting to a server
+set ssl_force_tls = yes
+
+####        Hook -- IMPORTANT!
+#   account-hook $folder "set imap_user=$imap_user imap_pass=$imap_pass"
+account-hook $folder "set imap_user=rosxhead@gmail.com imap_pass=sldueevykcyshzps"
