@@ -20,23 +20,19 @@ set text_flowed = yes
 set sort = reverse-date-received
 
 ####        GMAIL ACCOUNT
-source "~/.config/neomutt/accounts/antoni_anemi_hotmail"
+source "~/.config/neomutt/accounts/gmail"
 # Here we use the $folder variable that has just been set in the sourced file.
 # We must set it right now otherwise the 'folder' variable will change in the next sourced file.
 #folder-hook $folder 'source ~/.config/neomutt/accounts/gmail'
-folder-hook antoni_anemi@hotmail.com/ 'source ~/.config/neomutt/accounts/antoni_anemi_hotmail'
+folder-hook rosxhead@gmail.com/ 'source ~/.config/neomutt/accounts/gmail'
 
-source "~/.config/neomutt/accounts/antonio_cortes_lagunes_hotmail"
-folder-hook $folder 'source ~/.config/neomutt/accounts/antonio_cortes_lagunes_hotmail'
+source "~/.config/neomutt/accounts/outlook"
+folder-hook $folder 'source ~/.config/neomutt/accounts/outlook'
 #folder-hook pruebaskevo87@outlook.com/ 'source ~/.config/neomutt/accounts/outlook'
 
-source "~/.config/neomutt/accounts/antoniosistemascomputacionales_hotmail"
-folder-hook $folder 'source ~/.config/neomutt/accounts/antoniosistemascomputacionales_hotmail'
-
 ####    Shortcuts CHANGE ACCOUNTS
-macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/antoni_anemi_hotmail<enter><change-folder>!<enter>'
-macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/antonio_cortes_lagunes_hotmail<enter><change-folder>!<enter>'
-macro index,pager <f4> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/antoniosistemascomputacionales_hotmail<enter><change-folder>!<enter>'
+macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/gmail<enter><change-folder>!<enter>'
+macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/outlook<enter><change-folder>!<enter>'
 
 ####    SIDEBAR SETTINGS
 set sidebar_visible # comment to disable sidebar by default
