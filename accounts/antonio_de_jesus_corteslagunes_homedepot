@@ -1,16 +1,16 @@
 ####        USER SETTINGS SEND OPTIONS
-set realname = "antoni_anemi_hotmail"
-set from = "antoni_anemi@hotmail.com"
+set realname = "antonio_de_jesus_corteslagunes_homedepot"
+set from = "antonio_de_jesus_corteslagunes_homedepot@homedepot.com"
 
 ####        IMAP SETTINGS RECEIVE OPTIONS
-set imap_user = "antoni_anemi@hotmail.com"
+set imap_user = "antonio_de_jesus_corteslagunes_homedepot@homedepot.com""
 set imap_pass = "***"
 # Indica la carperta donde va extraer la información del correo
 # Correo @ Servidor IMAP : PUERTO
-set folder = "imaps://antoni_anemi@hotmail.com@outlook.office365.com:993"
+set folder = "imaps://antonio_de_jesus_corteslagunes_homedepot@homedepot.com@imap.homedepot.com:993"
 
 ####        STMP SETTINGS SEND OPTIONS
-set smtp_url = "smtp://antoni_anemi@hotmail.com@smtp.office365.com:587"
+set smtp_url = "smtp://antonio_de_jesus_corteslagunes_homedepot@homedepot.com@smtp.homedepot.com:587"
 set smtp_pass = "***"
 set smtp_authenticators = 'login'
 
@@ -33,4 +33,4 @@ set ssl_force_tls = yes
 
 ####        Hook -- IMPORTANT!
 #   account-hook $folder "set imap_user=$imap_user imap_pass=$imap_pass"
-account-hook $folder "set imap_user=antoni_anemi@hotmail.com imap_pass=***"
+account-hook $folder "set imap_user=antonio_de_jesus_corteslagunes_homedepot@homedepot.com imap_pass=***"

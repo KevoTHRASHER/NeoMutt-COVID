@@ -1,18 +1,18 @@
 ####        USER SETTINGS SEND OPTIONS
-set realname = "antoni_anemi_hotmail"
-set from = "antoni_anemi@hotmail.com"
+set realname = "antonio_cortes_neoris"
+set from = "antonio_cortes@neoris.com"
 
 ####        IMAP SETTINGS RECEIVE OPTIONS
-set imap_user = "antoni_anemi@hotmail.com"
-set imap_pass = "***"
+set imap_user = "antonio_cortes@neoris.com""
+set imap_pass = "rastraA12?"
 # Indica la carperta donde va extraer la información del correo
 # Correo @ Servidor IMAP : PUERTO
-set folder = "imaps://antoni_anemi@hotmail.com@outlook.office365.com:993"
+set folder = "imaps://antonio_cortes@neoris.com@imap.neoris.com:993"
 
 ####        STMP SETTINGS SEND OPTIONS
-set smtp_url = "smtp://antoni_anemi@hotmail.com@smtp.office365.com:587"
-set smtp_pass = "***"
-set smtp_authenticators = 'login'
+set smtp_url = "smtp://antonio_cortes@neoris.com@smtp.neoris.com:587"
+set smtp_pass = "rastraA12?"
+#set smtp_authenticators = 'login'
 
 ####        INBOX & MAILBOXES
 set spoolfile = "+INBOX"
@@ -33,4 +33,4 @@ set ssl_force_tls = yes
 
 ####        Hook -- IMPORTANT!
 #   account-hook $folder "set imap_user=$imap_user imap_pass=$imap_pass"
-account-hook $folder "set imap_user=antoni_anemi@hotmail.com imap_pass=***"
+account-hook $folder "set imap_user=antonio_cortes@neoris.com imap_pass=rastraA12?"

@@ -12,7 +12,7 @@ set imap_keepalive = 300
 set mail_check = 120
 
 ####        EDITOR SETTINGS
-set charset = "utf-8"
+set charset = "UTF-8"
 set editor = "nvim"
 # correct indentation for plain text
 set text_flowed = yes
@@ -33,10 +33,18 @@ folder-hook $folder 'source ~/.config/neomutt/accounts/antonio_cortes_lagunes_ho
 source "~/.config/neomutt/accounts/antoniosistemascomputacionales_hotmail"
 folder-hook $folder 'source ~/.config/neomutt/accounts/antoniosistemascomputacionales_hotmail'
 
+source "~/.config/neomutt/accounts/antonio_cortes_neoris"
+folder-hook $folder 'source ~/.config/neomutt/accounts/antonio_cortes_neoris'
+
+source "~/.config/neomutt/accounts/antonio_de_jesus_corteslagunes_homedepot"
+folder-hook $folder 'source ~/.config/neomutt/accounts/antonio_de_jesus_corteslagunes_homedepot'
+
 ####    Shortcuts CHANGE ACCOUNTS
 macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/antoni_anemi_hotmail<enter><change-folder>!<enter>'
 macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/antonio_cortes_lagunes_hotmail<enter><change-folder>!<enter>'
 macro index,pager <f4> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/antoniosistemascomputacionales_hotmail<enter><change-folder>!<enter>'
+macro index,pager <f5> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/antonio_cortes_neoris<enter><change-folder>!<enter>'
+macro index,pager <f6> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/antonio_de_jesus_corteslagunes_homedepot<enter><change-folder>!<enter>'
 
 ####    SIDEBAR SETTINGS
 set sidebar_visible # comment to disable sidebar by default
