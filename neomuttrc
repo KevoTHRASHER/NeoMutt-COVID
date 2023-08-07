@@ -21,14 +21,10 @@ set sort = reverse-date-received
 
 ####        GMAIL ACCOUNT
 source "~/.config/neomutt/accounts/antoni_anemi_hotmail"
-# Here we use the $folder variable that has just been set in the sourced file.
-# We must set it right now otherwise the 'folder' variable will change in the next sourced file.
-#folder-hook $folder 'source ~/.config/neomutt/accounts/gmail'
 folder-hook antoni_anemi@hotmail.com/ 'source ~/.config/neomutt/accounts/antoni_anemi_hotmail'
 
 source "~/.config/neomutt/accounts/antonio_cortes_lagunes_hotmail"
 folder-hook $folder 'source ~/.config/neomutt/accounts/antonio_cortes_lagunes_hotmail'
-#folder-hook pruebaskevo87@outlook.com/ 'source ~/.config/neomutt/accounts/outlook'
 
 source "~/.config/neomutt/accounts/antoniosistemascomputacionales_hotmail"
 folder-hook $folder 'source ~/.config/neomutt/accounts/antoniosistemascomputacionales_hotmail'
